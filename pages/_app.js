@@ -13,6 +13,11 @@ function MyApp({ Component, pageProps }) {
           name="description"
           content="Landing page desenvolvida de modo a promover meu trabalho de freelancer. Mostrar que tenho conhecimentos de SEO, criatividade e capacidade. Bem-vindo."
         />
+        <link
+          rel="shortcut icon"
+          href="../public/favicon.ico"
+          type="image/x-icon"
+        />
       </Head>
       <Layout>
         <Component {...pageProps} />
