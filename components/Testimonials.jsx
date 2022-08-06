@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/future/image';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const responsive = {
   superLargeDesktop: {
@@ -23,8 +25,11 @@ const responsive = {
 };
 
 const Testimonials = () => {
+  React.useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
   return (
-    <section id="testimonials">
+    <section id="testimonials" data-aos="fade-right">
       <div className="max-w-6xl px-5 mx-auto mt-32 text-center">
         <h2 className="text-4xl font-bold text-center">
           What is Different About Manage?
