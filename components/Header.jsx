@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Logo from '../assets/svgs/logo';
+import Image from 'next/image';
 import useMedia from '../Hooks/useMedia';
 
 const Header = () => {
@@ -18,7 +18,14 @@ const Header = () => {
       <nav className="relative container mx-auto p-6">
         <div className="flex items-center justify-between">
           <div className="pt-2">
-            <Logo />
+            <Image
+              src='/images/bg-transparente-black-color-small.png'
+              blurDataURL='/images/bg-transparente-black-color-small.png'
+              placeholder="blur"
+              width={146}
+              height={50}
+              alt="Logo"
+            />
           </div>
 
           <div className="hidden md:flex space-x-6">

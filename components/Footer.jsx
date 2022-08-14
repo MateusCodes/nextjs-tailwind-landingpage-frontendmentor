@@ -2,9 +2,12 @@ import React from 'react';
 import Image from 'next/future/image';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
 
+const styles = {
+  width: 'auto',
+  height: 'auto'
+};
 
 const Footer = () => {
-
   return (
     <footer className="bg-veryDarkBlue" data-aos="fade-right">
       <div className="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
@@ -14,11 +17,11 @@ const Footer = () => {
           </div>
           <div className="mb-3">
             <Image
-              src="https://i.imgur.com/JVivP1S.png"
-              blurDataURL="https://i.imgur.com/JVivP1S.png"
+              src="/images/bg-transparent-white-color-small.png"
+              blurDataURL="/images/bg-transparent-white-color-small.png"
               placeholder="blur"
               width={146}
-              height={24}
+              height={30}
               alt="Manage White Logo"
             />
           </div>
