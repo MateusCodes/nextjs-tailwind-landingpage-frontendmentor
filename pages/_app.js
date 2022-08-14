@@ -1,9 +1,18 @@
 import '../styles/globals.css';
 
+import React from 'react'
 import { Layout } from '../components/index';
 import Head from 'next/head';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 
 function MyApp({ Component, pageProps }) {
+
+  React.useEffect(() => {
+    Aos.init({ duration: 2000, once: true, easing: 'ease' });
+  }, []);
+
   return (
     <>
       <Head>

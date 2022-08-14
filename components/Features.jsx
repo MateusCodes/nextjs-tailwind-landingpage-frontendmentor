@@ -1,11 +1,8 @@
 import React from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Features = () => {
-  React.useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
 
   return (
     <section id="features" data-aos="fade-left">

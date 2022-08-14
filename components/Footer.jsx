@@ -1,13 +1,10 @@
 import React from 'react';
 import Image from 'next/future/image';
 import { FaFacebook, FaInstagram, FaYoutube, FaTwitter } from 'react-icons/fa';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+
 
 const Footer = () => {
-  React.useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
+
   return (
     <footer className="bg-veryDarkBlue" data-aos="fade-right">
       <div className="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
